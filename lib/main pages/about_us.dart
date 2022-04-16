@@ -107,10 +107,7 @@ class _AboutPageState extends State<AboutPage> {
                       //----------------------------------------------------------------
 
                       FloatingTitleBar(screenSize: size),
-                      // FeaturedHeading(
-                      //   screenSize: size,
-                      // ),
-                      // FeaturedTiles(screenSize: size),
+                      // About(screenSize: size),
                       const Spacer4(),
                       //----------------------------------------------------------------
 

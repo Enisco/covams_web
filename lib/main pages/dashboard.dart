@@ -107,10 +107,7 @@ class _DashboardState extends State<Dashboard> {
                       //----------------------------------------------------------------
 
                       FloatingTitleBar(screenSize: size),
-                      // FeaturedHeading(
-                      //   screenSize: size,
-                      // ),
-                      // FeaturedTiles(screenSize: size),
+                      // DashBoard(screenSize: size),
                       const Spacer4(),
                       //----------------------------------------------------------------
 
