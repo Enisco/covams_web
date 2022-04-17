@@ -1,5 +1,7 @@
+import 'package:covams_web/main%20pages/covams_homepage.dart';
 import 'package:flutter/material.dart';
-import '../main pages/about_us.dart';
+import '../access pages/login pages/login_gateway.dart';
+import 'package:covams_web/main pages/about_us.dart';
 import '../main pages/dashboard.dart';
 import '../main.dart';
 
@@ -56,7 +58,13 @@ class _TopBarContentsState extends State<TopBarContents> {
                               : _isHovering[0] = false;
                         });
                       },
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CovamsHomePage()),
+                        );
+                      },
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -142,7 +150,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const AboutPage()),
+                              builder: (context) => const Aboutpage()),
                         );
                       },
                       child: Column(
@@ -213,7 +221,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                         width: 2,
                       ),
                       Text(
-                        'Sign in',
+                        'My Account',
                         style: TextStyle(
                           color:
                               _isHovering[3] ? Colors.blue[200] : Colors.white,
@@ -234,7 +242,13 @@ class _TopBarContentsState extends State<TopBarContents> {
                     ],
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LoginGateway()),
+                  );
+                },
               ),
             ],
           ),

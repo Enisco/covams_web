@@ -1,3 +1,4 @@
+import 'package:covams_web/access%20pages/login%20pages/login_gateway.dart';
 import 'package:covams_web/components/my_spacers.dart';
 import 'package:covams_web/main%20pages/covams_homepage.dart';
 import 'package:flutter/material.dart';
@@ -99,7 +100,7 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const AboutPage()),
+                    MaterialPageRoute(builder: (context) => const Aboutpage()),
                   );
                 },
                 child: Text(
@@ -118,9 +119,15 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
                     value ? _isHovering[3] = true : _isHovering[3] = false;
                   });
                 },
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LoginGateway()),
+                  );
+                },
                 child: Text(
-                  ' > Sign in/Sign out',
+                  ' > My Account',
                   style: TextStyle(
                     color: _isHovering[3] ? Colors.blue[200] : Colors.white,
                   ),

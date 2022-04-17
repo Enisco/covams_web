@@ -1,3 +1,5 @@
+// ignore_for_file: unused_element
+
 import 'package:covams_web/homepage%20building%20blocks/bottom_section.dart';
 import 'package:flutter/material.dart';
 import '../components/my_spacers.dart';
@@ -8,14 +10,14 @@ import '../utilities/responsive.dart';
 import '../homepage building blocks/top_bar_contents.dart';
 import '../main.dart';
 
-class AboutPage extends StatefulWidget {
-  const AboutPage({Key? key}) : super(key: key);
+class Aboutpage extends StatefulWidget {
+  const Aboutpage({Key? key}) : super(key: key);
 
   @override
-  _AboutPageState createState() => _AboutPageState();
+  _AboutpageState createState() => _AboutpageState();
 }
 
-class _AboutPageState extends State<AboutPage> {
+class _AboutpageState extends State<Aboutpage> {
   late ScrollController _scrollController;
   double _scrollPosition = 0;
   double _opacity = 0.0;
